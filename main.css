@@ -1,0 +1,144 @@
+
+body {
+ background: rgb(20,14,77);
+background: linear-gradient(50deg, rgba(20,14,77,1) 43%, rgba(253,45,70,0.9499999829033176) 100%);
+font-family: Roboto;
+ }
+
+
+.terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  display: block;
+  top: 25vh;
+  transition: all 0.5s ease;
+
+  &.minimized {
+    height: 30px;
+    top: calc(100vh - 38px);
+    width: 250px;
+  }
+  
+  &.fullscreen {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+  header {
+    background: #212529;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;
+  }
+
+    .button {
+      width: 12px;
+      height: 12px;
+      margin: 10px 4px 0 0;
+      display: inline-block;
+      border-radius: 8px;
+    }
+
+  #terminal {
+    color: white;
+    font-family: Roboto;
+    font-size: 11pt;
+    background: #1d3557;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    bottom: 0;
+    overflow: auto;
+  }
+
+  .contact {
+    list-style: none;
+    margin-left: -30px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    display: block;
+  }
+
+  .input {
+    outline-color:  #30353a;
+    border:         none;
+    display:        inline-block;
+  }
+
+  .root {
+    color: #FFF;
+  }
+
+  .tick {
+    color: #b5e48c;
+  }
+
+  .blue {
+    color: #b5e48c;
+  }
+
+  .gray {
+    color: gray;
+  }
+
+  .dir {
+    color: #b5e48c;
+  }
+
+  .green {
+    color: green;
+  }
+
+.command_input {
+  border: none;
+  // background: #30353a;
+  background: #000634;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 0.1px;
+  color: white;
+  font-family: Roboto;
+}
+  .site-code {
+    font-weight: bold;
+    color: lightblue;
+  }
+
+.terminal-data {
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  .terminal-window {
+    width: 95%;
+    height: 60vh;
+    top: 10vh;
+  }
+
+  .footer {
+    bottom: 20px;
+  }
+}
